@@ -1,0 +1,86 @@
+# ===============================
+# ENVIRONMENT VARIABLES (CRITICAL)
+# ===============================
+.env
+.env.*
+!.env.example
+
+# ===============================
+# PYTHON (Backend)
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# ===============================
+# UPLOADS / GENERATED FILES
+# ===============================
+backend/uploads/
+output/
+*.log
+
+# ===============================
+# NODE / FRONTEND
+# ===============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===============================
+# FRONTEND BUILD OUTPUT
+# ===============================
+frontend/dist/
+frontend/build/
+dist-ssr
+*.local
+
+# ===============================
+# OS / EDITOR FILES
+# ===============================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===============================
+# TEMP / CACHE
+# ===============================
+.cache/
+.tmp/
+temp/
+
+# ===============================
+# BINARY / MEDIA OUTPUT (OPTIONAL)
+# ===============================
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ===============================
+# SECRETS / KEYS
+# ===============================
+*.pem
+*.key
+*.crt
+
+# ===============================
+# LOCK FILES (OPTIONAL)
+# ===============================
+pip-log.txt
