@@ -19,11 +19,15 @@ The **Smart B-Roll Inserter** is an AI-powered system that automatically plans a
 
 ## ⚠️ Important Note on API Usage
 
-This system requires a valid OpenAI API Key.
-**Fallback Mode:** If the API Key is missing, invalid, or out of quota (Error 429), the system automatically switches to **Mock Mode**:
+This system supports AI-powered transcription and semantic matching via an external API.
+
+**Fallback Mode:**  
+If the API key is missing, invalid, or out of quota (for example, rate-limited errors), the system automatically switches to **Mock Mode**:
 - Uses a pre-written mock transcript.
-- Uses random embeddings for matching.
-- Ensures the application flow completes without crashing.
+- Uses generated mock embeddings for matching.
+- Ensures the full application flow completes without crashing.
+
+This allows the application to remain functional and testable even without API access.
 
 ## Manual Setup
 
